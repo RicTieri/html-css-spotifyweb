@@ -51,7 +51,7 @@ footer {
 /* main */
 .action-bar {
   position: fixed;
-  width: calc(100vw - 230px);
+  width: calc(100vw - 250px);
   top: 0;
   background-color: #080b12;
   display: flex;
@@ -104,6 +104,7 @@ footer {
   margin: 2rem 1rem;
   width: 100%;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -118,10 +119,12 @@ footer {
 }
  
 .song-pic{
+  position: relative;
   width: 100%;
 }
 
 .song-pic img{
+  display: block;
   width: 100%;
 }
 
@@ -136,4 +139,24 @@ footer {
 .caption{
   font-weight: bold;
   color: #76787d;
+}
+
+/* card-hover */
+
+.song-pic i{
+  display: none;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-pic:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.song-pic:hover i{
+  display: block;
 }
