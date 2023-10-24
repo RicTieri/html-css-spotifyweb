@@ -103,11 +103,17 @@ header>div {
 }
 
 .main-section li {
+  position: relative;
+  padding: .5rem 0;
   margin: 1rem;
   font-weight: bold;
-  color: #76787d;
   display: inline;
   text-transform: uppercase;
+}
+
+.main-section a{
+  text-decoration: none;
+  color: #76787d;
 }
 
 /* songs-section */
@@ -165,8 +171,24 @@ header>div {
   color: #76787d;
 }
 
-/* card-hover */
+/* main-section hover */
+.main-section a:hover::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #adff2f;
+}
 
+.main-section a:hover{
+  color: #fff;
+}
+
+/* card-hover */
 .song-pic i {
   display: none;
   font-size: 3rem;
@@ -186,7 +208,7 @@ header>div {
 
 /* home-btn hover */
 .home-btn:hover {
-
   color: #fff;
   border-left: 4px solid #adff2f;
 }
+
