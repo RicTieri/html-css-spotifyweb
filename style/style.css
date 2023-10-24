@@ -99,7 +99,7 @@ header ul {
 }
 
 header li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 header a {
@@ -112,6 +112,7 @@ header a {
 }
 
 .install {
+  padding-bottom: .3rem;
   border-bottom: 1px solid #76787d;
 }
 
@@ -242,6 +243,10 @@ header a {
 }
 
 /* main-section hover */
+button{
+  cursor: pointer;
+}
+
 .upgrade:hover {
   scale: 1.05;
 }
@@ -260,6 +265,7 @@ header a {
 
 .main-section a:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 /* card-hover */
@@ -278,7 +284,9 @@ header a {
 
 .song-pic:hover i {
   display: block;
+  cursor: pointer;
 }
+
 
 /* home-btn hover */
 .home-btn {
@@ -295,14 +303,23 @@ header a {
   background-color: #adff2f;
 }
 
+.home-btn:hover a{
+  color: #fff;
+}
+
 .menu-add:hover {
   color: #fff;
 }
 
-.playlist a:hover {
+.menu-add:hover a {
+  color: #fff;
+}
+
+.playlist li:hover a {
   color: #fff;
 }
 
 .install:hover {
   color: #fff;
 }
+
