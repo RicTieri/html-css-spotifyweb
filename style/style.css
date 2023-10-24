@@ -58,7 +58,7 @@ header>div {
 .logo {
   padding: 1rem 0;
   width: 60%;
-  margin: auto;
+  margin-left: 1.5rem;
 }
 
 .logo-xs {
@@ -71,6 +71,39 @@ header>div {
   display: inline-block;
   vertical-align: middle;
 }
+
+.playlist{
+  margin: .5rem;
+}
+
+.playlist h3{
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.menu-add{
+  margin-bottom: 1rem;
+}
+
+.fa-square-plus{
+  margin-right: .5rem;
+  font-size: 3rem;
+  vertical-align: middle;
+}
+
+header ul{
+  list-style: none;
+}
+
+header li{
+  margin-bottom: 1rem;
+}
+
+header a{
+  text-decoration: none;
+  color: #76787d;
+}
+
 
 /* main */
 .action-bar {
@@ -212,3 +245,10 @@ header>div {
   border-left: 4px solid #adff2f;
 }
 
+.menu-add:hover{
+  color: #fff;
+}
+
+.playlist a:hover{
+  color: #fff;
+}
