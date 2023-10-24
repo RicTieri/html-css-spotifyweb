@@ -12,7 +12,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.flex-j-center{
+.flex-j-center {
   display: flex;
   justify-content: center;
 }
@@ -22,7 +22,9 @@ body {
 header {
   width: 250px;
   height: calc(100vh - 100px);
-  background-color: lightcyan;
+  background-color: #000000;
+  color: #76787d;
+  font-weight: bold;
 }
 
 main {
@@ -48,6 +50,28 @@ footer {
   background-color: lightgreen;
 }
 
+/* header */
+header>div {
+  padding: 0 1rem;
+}
+
+.logo {
+  padding: 1rem 0;
+  width: 60%;
+  margin: auto;
+}
+
+.logo-xs {
+  display: none;
+}
+
+.menu-item {
+  width: 13%;
+  margin: .5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* main */
 .action-bar {
   position: fixed;
@@ -59,7 +83,7 @@ footer {
   align-items: center;
 }
 
-.upgrade{
+.upgrade {
   font-size: .5rem;
   font-weight: bold;
   color: white;
@@ -73,12 +97,12 @@ footer {
 
 /* main-section */
 
-.main-section ul{
+.main-section ul {
   flex-wrap: wrap;
   list-style: none;
 }
 
-.main-section li{
+.main-section li {
   margin: 1rem;
   font-weight: bold;
   color: #76787d;
@@ -95,7 +119,7 @@ footer {
   margin: 1rem;
 }
 
-.songs>.caption{
+.songs>.caption {
   margin: 0 1rem;
 }
 
@@ -114,36 +138,36 @@ footer {
   width: calc(100% / 6 - 7.5rem / 6);
 }
 
-.card > *{
+.card>* {
   margin-bottom: 1rem;
 }
- 
-.song-pic{
+
+.song-pic {
   position: relative;
   width: 100%;
 }
 
-.song-pic img{
+.song-pic img {
   display: block;
   width: 100%;
 }
 
-.round-pic img{
+.round-pic img {
   border-radius: 50%;
 }
 
-.card h2{
+.card h2 {
   font-size: 1.2rem;
 }
 
-.caption{
+.caption {
   font-weight: bold;
   color: #76787d;
 }
 
 /* card-hover */
 
-.song-pic i{
+.song-pic i {
   display: none;
   font-size: 3rem;
   position: absolute;
@@ -152,11 +176,17 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.song-pic:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: 1;
+.song-pic:hover img {
+  filter: brightness(.5);
 }
 
-.song-pic:hover i{
+.song-pic:hover i {
   display: block;
+}
+
+/* home-btn hover */
+.home-btn:hover {
+
+  color: #fff;
+  border-left: 4px solid #adff2f;
 }
