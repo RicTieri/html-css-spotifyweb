@@ -8,7 +8,7 @@
 /* general */
 body {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -22,11 +22,21 @@ header{
 
 main{
   width: calc(100vw - 230px);
-  height: calc(100vh - 100px);
+  height: calc(100vh - 180px);
+  margin-top: 80px;
   background-color: lightgray;
+  overflow-y: scroll;
+}
+
+.main-content{
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 footer{
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 100px;
   background-color: lightgreen;
@@ -34,10 +44,36 @@ footer{
 
 /* main */
 .action-bar{
+  position: fixed;
+  width: 100%;
+  top: 0;
   height: 80px;
   background-color: lightcoral;
 }
 
-.card {
-  
+.main-section{
+  height: 40px;
+  background-color: lightpink;
+}
+
+.songs{
+  margin: 2rem;
+}
+
+.songs h2{
+  margin: 1rem;
+}
+
+.songs-container{
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin-right: 1rem;
+  width: 200px;
+  height: 200px;
+  background-color: lime;
 }
