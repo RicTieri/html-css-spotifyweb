@@ -14,13 +14,13 @@ body {
 
 
 /* general layouts */
-header{
+header {
   width: 230px;
   height: calc(100vh - 100px);
   background-color: lightcyan;
 }
 
-main{
+main {
   width: calc(100vw - 230px);
   height: calc(100vh - 180px);
   margin-top: 80px;
@@ -29,13 +29,13 @@ main{
   overflow-y: scroll;
 }
 
-.main-content{
+.main-content {
   width: 100%;
   height: 100%;
   color: white;
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -44,7 +44,7 @@ footer{
 }
 
 /* main */
-.action-bar{
+.action-bar {
   position: fixed;
   width: 100%;
   top: 0;
@@ -52,19 +52,37 @@ footer{
   background-color: lightcoral;
 }
 
-.main-section{
-  height: 40px;
+/* main-section */
+.main-section {
+  display: flex;
+  justify-content: center;
 }
 
-.songs{
+.main-section ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.main-section li{
+  margin: 1rem;
+  font-weight: bold;
+  color: #76787d;
+  display: inline;
+  text-transform: uppercase;
+}
+
+/* songs-section */
+.songs {
   margin: 2rem;
 }
 
-.songs h1{
+.songs h1 {
   margin: 1rem;
 }
 
-.songs-container{
+.songs-container {
   gap: 1rem;
   margin: 1rem;
   width: 100%;
@@ -72,7 +90,7 @@ footer{
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   width: 200px;
   height: 200px;
   background-color: lime;
