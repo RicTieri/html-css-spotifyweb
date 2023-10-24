@@ -20,13 +20,13 @@ body {
 
 /* general layouts */
 header {
-  width: 230px;
+  width: 250px;
   height: calc(100vh - 100px);
   background-color: lightcyan;
 }
 
 main {
-  width: calc(100vw - 230px);
+  width: calc(100vw - 250px);
   height: calc(100vh - 175px);
   margin-top: 75px;
   padding-bottom: 0px;
