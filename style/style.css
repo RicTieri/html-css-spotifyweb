@@ -92,12 +92,16 @@ footer {
 }
 
 .songs h1 {
-  margin: 2rem 1rem;
+  margin: 1rem;
+}
+
+.songs>.caption{
+  margin: 0 1rem;
 }
 
 .songs-container {
-  gap: 1rem;
-  margin: 1rem;
+  gap: 1.5rem;
+  margin: 2rem 1rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +110,7 @@ footer {
 .card {
   flex-direction: column;
   align-items: center;
-  width: calc(100% / 6 - 5rem / 6);
+  width: calc(100% / 6 - 7.5rem / 6);
 }
 
 .card > *{
@@ -119,6 +123,10 @@ footer {
 
 .song-pic img{
   width: 100%;
+}
+
+.round-pic img{
+  border-radius: 50%;
 }
 
 .card h2{
