@@ -75,67 +75,68 @@ nav>div {
   vertical-align: middle;
 }
 
-.playlist{
+.playlist {
   margin: .5rem;
 }
 
-.playlist h3{
+.playlist h3 {
   color: #fff;
   margin-bottom: 1rem;
 }
 
-.menu-add{
+.menu-add {
   margin-bottom: 1rem;
 }
 
-.fa-square-plus{
+.fa-square-plus {
   margin-right: .5rem;
   font-size: 3rem;
   vertical-align: middle;
 }
 
-header ul{
+header ul {
   list-style: none;
 }
 
-header li{
+header li {
   margin-bottom: 1rem;
 }
 
-header a{
+header a {
   text-decoration: none;
   color: #76787d;
 }
 
-.user{
+.user {
   margin: 0 1rem;
 }
 
-.install{
+.install {
   border-bottom: 1px solid #76787d;
 }
 
-.install-icon{
+.install-icon {
   width: 10%;
   display: inline-block;
   vertical-align: middle;
 }
 
-.user-account{
+.user-account {
   margin: 1rem 0;
 }
 
-.profile-pic{
+.profile-pic {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: .5rem;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
   background-color: #76787d;
   border-radius: 50%;
   vertical-align: middle;
+  margin-right: .5rem;
 }
 
-.user-name{
+.user-name {
   font-size: 1.2rem;
   color: #fff;
 }
@@ -180,7 +181,7 @@ header a{
   text-transform: uppercase;
 }
 
-.main-section a{
+.main-section a {
   text-decoration: none;
   color: #76787d;
 }
@@ -241,7 +242,11 @@ header a{
 }
 
 /* main-section hover */
-.main-section a:hover::after{
+.upgrade:hover {
+  scale: 1.05;
+}
+
+.main-section a:hover::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -253,7 +258,7 @@ header a{
   background-color: #adff2f;
 }
 
-.main-section a:hover{
+.main-section a:hover {
   color: #fff;
 }
 
@@ -276,15 +281,28 @@ header a{
 }
 
 /* home-btn hover */
-.home-btn:hover {
-  color: #fff;
-  border-left: 4px solid #adff2f;
+.home-btn {
+  position: relative;
 }
 
-.menu-add:hover{
+.home-btn:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px;
+  margin: 0 auto;
+  height: 90%;
+  background-color: #adff2f;
+}
+
+.menu-add:hover {
   color: #fff;
 }
 
-.playlist a:hover{
+.playlist a:hover {
+  color: #fff;
+}
+
+.install:hover {
   color: #fff;
 }
