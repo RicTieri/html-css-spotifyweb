@@ -12,6 +12,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.flex-j-center{
+  display: flex;
+  justify-content: center;
+}
+
 
 /* general layouts */
 header {
@@ -22,9 +27,9 @@ header {
 
 main {
   width: calc(100vw - 230px);
-  height: calc(100vh - 180px);
-  margin-top: 80px;
-  margin-bottom: 100px;
+  height: calc(100vh - 175px);
+  margin-top: 75px;
+  padding-bottom: 20px;
   background-color: #141922;
   overflow-y: scroll;
 }
@@ -46,21 +51,29 @@ footer {
 /* main */
 .action-bar {
   position: fixed;
-  width: 100%;
+  width: calc(100vw - 230px);
   top: 0;
-  height: 80px;
-  background-color: lightcoral;
+  background-color: #080b12;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upgrade{
+  font-size: .5rem;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white;
+  background-color: #080b12;
+  padding: .75rem 2rem;
+  margin: 1rem .5rem;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
 /* main-section */
-.main-section {
-  display: flex;
-  justify-content: center;
-}
 
 .main-section ul{
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
 }
