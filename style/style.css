@@ -430,3 +430,36 @@ button{
   color: #fff;
 }
 
+/* footer hover */
+.col-left .caption:hover{
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.col-left i:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-btn i:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.progress:hover{
+  background-color: #adff2f;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress:hover::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
