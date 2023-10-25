@@ -256,7 +256,7 @@ header a {
 
 /* footer left-side */
 .col-left> div{
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
 .song-player-pic{
@@ -275,13 +275,9 @@ header a {
   font-size: .6rem;
 }
 
-.more {
-  padding: 1rem;
-}
-
 .more i{
-  font-size: 1.3rem;
   margin: .25rem;
+  font-size: 1.3rem;
   color: #76787d;
 }
 
@@ -289,7 +285,6 @@ header a {
 .task-btn i{
   color: #fff;
   margin: 0 .5rem;
-  font-size: 1rem;
   vertical-align: middle;
 }
 
@@ -478,13 +473,13 @@ button{
 
 @media screen and (max-width:576px) {
   header{
-    width: 70px;
+    width: 60px;
   }
   main{
-    width: calc(100% - 70px);
+    width: calc(100% - 60px);
   }
   .action-bar{    
-    width: calc(100% - 70px);
+    width: calc(100% - 60px);
   }
   .logo{
     display: none;
@@ -507,5 +502,14 @@ button{
   }
   header h3{
     display: none;
+  }
+  .col-30 i {
+    font-size: .9rem;
+  }
+  .col-right i{
+    font-size: .8rem;
+  }
+  .task-btn i{
+    margin: 0 .25rem;
   }
 }
