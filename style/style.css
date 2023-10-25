@@ -49,6 +49,7 @@ footer {
   width: 100%;
   height: 100px;
   display: flex;
+  justify-content: space-between;
   background-color: #282828;
 }
 
@@ -174,7 +175,6 @@ header a {
 
 .main-section li {
   position: relative;
-  padding: .5rem 0;
   margin: 1rem;
   font-weight: bold;
   display: inline;
@@ -188,20 +188,16 @@ header a {
 
 /* songs-section */
 .songs {
-  margin: 2rem;
-}
-
-.songs h1 {
   margin: 1rem;
 }
 
 .songs>.caption {
-  margin: 0 1rem;
+  margin: 1rem 0;
 }
 
 .songs-container {
   gap: 1.5rem;
-  margin: 2rem 1rem;
+  margin: 2rem 0;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -210,6 +206,7 @@ header a {
 
 .card {
   flex-direction: column;
+  text-align: center;
   align-items: center;
   width: calc(100% / 6 - 7.5rem / 6);
 }
@@ -233,10 +230,11 @@ header a {
 }
 
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .caption {
+  font-size: .8rem;
   font-weight: bold;
   color: #76787d;
 }
@@ -245,11 +243,11 @@ header a {
 .col-30{
   display: flex;
   align-items: center;
-  width: 30vw;
 }
 
 .col-40{
   width: 40vw;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,7 +333,7 @@ header a {
 }
 
 .col-right .bar{
-  width: 150px;
+  width: 100px;
   height: 5px;
   margin-right: 1rem;
   background-color: #76787d;
@@ -396,7 +394,7 @@ button{
 
 
 /* home-btn hover */
-.home-btn {
+.home-btn:hover {
   position: relative;
 }
 
@@ -462,4 +460,29 @@ button{
   height: 10px;
   border-radius: 50%;
   background-color: #fff;
+}
+
+/* media queries */
+@media screen and (max-width:992px) {
+  .card {
+    width: calc(100% / 4 - 4.5rem / 3);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card {
+    width: calc(100% / 2 - 1.5rem / 2);
+  }
+}
+
+@media screen and (max-width:576px) {
+  .logo{
+    display: none;
+  }
+  .logo-xs{
+    display: block;
+  }
+  header a{
+    display: none;
+  }
 }
