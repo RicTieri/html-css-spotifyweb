@@ -490,14 +490,13 @@ button{
     display: none;
   }
   .logo-xs{
-    padding-top: 1rem;
+    padding: 1rem;
     margin: 0 auto;
     display: block;
   }
   .menu-item{
-    padding-top: 1rem;
     width: 90%;
-    margin: 0 auto;
+    margin: .5rem auto;
   }
   .install-icon{
     width: 60%;
