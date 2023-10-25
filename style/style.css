@@ -476,13 +476,42 @@ button{
 }
 
 @media screen and (max-width:576px) {
+  header{
+    width: 70px;
+  }
+  main{
+    width: calc(100% - 70px);
+  }
+  .action-bar{    
+    width: calc(100% - 70px);
+  }
   .logo{
     display: none;
   }
   .logo-xs{
+    padding-top: 1rem;
+    margin: 0 auto;
     display: block;
+  }
+  .menu-item{
+    padding-top: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .install-icon{
+    width: 60%;
+    margin: auto;
   }
   header a{
     display: none;
+  }
+  header h3{
+    display: none;
+  }
+  .task-btn i{
+    font-size: .8rem;
+  }
+  .task-btn .fa-circle-play{
+    font-size: 1.3rem;
   }
 }
