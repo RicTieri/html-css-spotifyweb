@@ -48,7 +48,8 @@ main {
 footer {
   width: 100%;
   height: 100px;
-  background-color: lightgreen;
+  display: flex;
+  background-color: #282828;
 }
 
 /* header */
@@ -241,22 +242,21 @@ header a {
 }
 
 /* footer */
-footer{
-  display: flex;
-}
-
 .col-30{
   display: flex;
   align-items: center;
   width: 30vw;
-  border: 1px solid black;
 }
 
 .col-40{
   width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* left-side */
+/* footer left-side */
 .col-left> div{
   margin-left: 1rem;
 }
@@ -269,8 +269,59 @@ footer{
   width: 100%;
 }
 
-.col-left h3{
+.col-left h4{
   color: #fff;
+}
+
+.song-caption .caption{
+  font-size: .8rem;
+}
+
+.more {
+  padding: 1rem;
+}
+
+.more i{
+  font-size: 1.3rem;
+  margin-right: .5rem;
+  color: #76787d;
+}
+
+/* footer center */
+.task-btn i{
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+.task-btn .fa-circle-play{
+  font-size: 2.3rem;
+}
+
+.play-progress{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.play-progress .bar{
+  width: 80%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #76787d;
+}
+
+.progress{
+  width: 20%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #c1c1c1;
 }
 
 
