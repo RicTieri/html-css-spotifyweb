@@ -99,7 +99,7 @@ header ul {
 }
 
 header li {
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 header a {
@@ -242,6 +242,40 @@ header a {
   color: #76787d;
 }
 
+/* footer */
+footer{
+  display: flex;
+}
+
+.col-30{
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  border: 1px solid black;
+}
+
+.col-40{
+  width: 40vw;
+}
+
+/* left-side */
+.col-left> div{
+  margin-left: 1rem;
+}
+
+.song-player-pic{
+  width: 60px;
+}
+
+.song-player-pic img{
+  width: 100%;
+}
+
+.col-left h3{
+  color: #fff;
+}
+
+
 /* main-section hover */
 button{
   cursor: pointer;
@@ -319,7 +353,7 @@ button{
   color: #fff;
 }
 
-.install:hover {
+.install:hover a {
   color: #fff;
 }
 
